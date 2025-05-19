@@ -59,12 +59,12 @@ return {
   -- `find_files` or `git_files` depending on whether the
   -- directory is a git repo.
   {
-    "nvim-telescope/telescope.nvim",
+    "thomasbellio/telescope.nvim",
     cmd = "Telescope",
     version = false, -- telescope did only one release, so use HEAD for now
     dependencies = {
       {
-        "nvim-telescope/telescope-fzf-native.nvim",
+        "thomasbellio/telescope-fzf-native.nvim",
         build = (build_cmd ~= "cmake") and "make"
           or "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
         enabled = build_cmd ~= nil,
@@ -230,7 +230,7 @@ return {
 
   -- Flash Telescope config
   {
-    "nvim-telescope/telescope.nvim",
+    "thomasbellio/telescope.nvim",
     optional = true,
     opts = function(_, opts)
       if not LazyVim.has("flash.nvim") then
@@ -259,25 +259,6 @@ return {
       })
     end,
   },
-
-  -- better vim.ui with telescope
-  {
-    "stevearc/dressing.nvim",
-    lazy = true,
-    init = function()
-      ---@diagnostic disable-next-line: duplicate-set-field
-      vim.ui.select = function(...)
-        require("lazy").load({ plugins = { "dressing.nvim" } })
-        return vim.ui.select(...)
-      end
-      ---@diagnostic disable-next-line: duplicate-set-field
-      vim.ui.input = function(...)
-        require("lazy").load({ plugins = { "dressing.nvim" } })
-        return vim.ui.input(...)
-      end
-    end,
-  },
-
   {
     "neovim/nvim-lspconfig",
     opts = function()

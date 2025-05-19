@@ -131,7 +131,7 @@ return {
 
   -- use edgy's selection window
   {
-    "nvim-telescope/telescope.nvim",
+    "thomasbellio/telescope.nvim",
     optional = true,
     opts = {
       defaults = {

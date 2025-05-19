@@ -17,7 +17,7 @@ return {
     version = "^3",
     ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
     dependencies = {
-      { "nvim-telescope/telescope.nvim", optional = true },
+      { "thomasbellio/telescope.nvim", optional = true },
     },
     config = function()
       local ok, telescope = pcall(require, "telescope")
@@ -70,7 +70,7 @@ return {
     "luc-tielen/telescope_hoogle",
     ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
     dependencies = {
-      { "nvim-telescope/telescope.nvim" },
+      { "thomasbellio/telescope.nvim" },
     },
     config = function()
       local ok, telescope = pcall(require, "telescope")

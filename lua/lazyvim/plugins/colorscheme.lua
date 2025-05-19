@@ -1,15 +1,7 @@
 return {
-
-  -- tokyonight
-  {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = { style = "moon" },
-  },
-
   -- catppuccin
   {
-    "catppuccin/nvim",
+    "thomasbellio/catppuccin-nvim",
     lazy = true,
     name = "catppuccin",
     opts = {
@@ -54,7 +46,7 @@ return {
     },
     specs = {
       {
-        "akinsho/bufferline.nvim",
+        "thomasbellio/bufferline.nvim",
         optional = true,
         opts = function(_, opts)
           if (vim.g.colors_name or ""):find("catppuccin") then

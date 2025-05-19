@@ -58,7 +58,7 @@ return {
     },
   },
   {
-    "nvim-telescope/telescope.nvim",
+    "thomasbellio/telescope.nvim",
     optional = true,
     specs = {
       {

@@ -57,7 +57,7 @@ return {
 
   -- Telescope integration
   {
-    "nvim-telescope/telescope.nvim",
+    "thomasbellio/telescope.nvim",
     optional = true,
     opts = function()
       LazyVim.on_load("telescope.nvim", function()

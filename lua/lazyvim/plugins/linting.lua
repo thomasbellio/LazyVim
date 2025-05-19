@@ -1,6 +1,6 @@
 return {
   {
-    "mfussenegger/nvim-lint",
+    "thomasbellio/nvim-lint",
     event = "LazyFile",
     opts = {
       -- Event to trigger linters
