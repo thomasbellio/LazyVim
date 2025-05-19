@@ -2,7 +2,7 @@ return {
   -- This is what powers LazyVim's fancy-looking
   -- tabs, which include filetype icons and close buttons.
   {
-    "akinsho/bufferline.nvim",
+    "thomasbellio/bufferline.nvim",
     event = "VeryLazy",
     keys = {
       { "<leader>bp", "<Cmd>BufferLineTogglePin<CR>", desc = "Toggle Pin" },
@@ -62,7 +62,7 @@ return {
 
   -- statusline
   {
-    "nvim-lualine/lualine.nvim",
+    "thomasbellio/lualine.nvim",
     event = "VeryLazy",
     init = function()
       vim.g.lualine_laststatus = vim.o.laststatus
@@ -191,7 +191,7 @@ return {
 
   -- Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.
   {
-    "folke/noice.nvim",
+    "thomasbellio/noice.nvim",
     event = "VeryLazy",
     opts = {
       lsp = {
@@ -245,7 +245,7 @@ return {
 
   -- icons
   {
-    "echasnovski/mini.icons",
+    "thomasbellio/mini.icons",
     lazy = true,
     opts = {
       file = {
@@ -265,7 +265,7 @@ return {
   },
 
   -- ui components
-  { "MunifTanjim/nui.nvim", lazy = true },
+  { "thomasbellio/nui.nvim", lazy = true },
 
   {
     "snacks.nvim",

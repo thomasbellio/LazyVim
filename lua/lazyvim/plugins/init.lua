@@ -11,10 +11,10 @@ end
 require("lazyvim.config").init()
 
 return {
-  { "folke/lazy.nvim", version = "*" },
-  { "LazyVim/LazyVim", priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
+  { "thomasbellio/lazy.nvim", version = "*" },
+  { "thomasbellio/LazyVim", priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
   {
-    "folke/snacks.nvim",
+    "thomasbellio/snacks.nvim",
     priority = 1000,
     lazy = false,
     opts = {},
