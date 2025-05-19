@@ -12,7 +12,7 @@ require("lazyvim.config").init()
 
 return {
   { "thomasbellio/lazy.nvim", branch="thomas-stable" },
-  { "thomasbellio/LazyVim", branch="thomas-stable" priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
+  { "thomasbellio/LazyVim", priority = 10000, lazy = false, opts = {}, cond = true, version = "*" },
   {
     "thomasbellio/snacks.nvim",
     priority = 1000,
